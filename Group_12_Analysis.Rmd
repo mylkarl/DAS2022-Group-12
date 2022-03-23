@@ -97,7 +97,12 @@ ggplot(data=data12,aes(x=time_at_shelter))+
 
 ## 3.Building a glm Poisson regression model
 
-(Explain the glm model, the Poisson family of distributions, and why we chose the Poisson distribution for the glm regression.)
+
+The generalized linear model (GLM) is a direct extension of the normal linear model and is used for both continuous and discrete data. Generalized linear model connects the expectation of dependent variable with linear independent variable through link function, and describes the distribution of error through error function, so that many linear model methods can be applied to general problems.
+
+Poisson distribution is a discrete probability distribution, which represents the probability given that events occur within a fixed time or space interval if they occur at a known constant average rate and are independent of the time since the last event.
+
+Our group divided the value of the response variable Y (time_at_shelter) into different levels, indicating the length of time an animal would stay in the shelter under different conditions. For the problems to be discussed, Poisson distribution is selected as GLM regression. For independent variables and dependent variables composed of discrete data, the strength of their correlation can be well expressed through this model.
 
 
 ```{r poison model}
