@@ -30,6 +30,8 @@ library(MASS)
 
 (Describe the data set, the problem, the methods used.)
 
+The data set in this report has 7 groups of variables, which are animal_Type, month, year, intake_type, outcome_type, chip_STATUS, and time_at_shelter. Each set of variables had 1135 observations. Time_at_shelter is selected as the dependent variable Y for the convenience of analysis. At the same time, the missing values in the observed values are removed in the calculation.
+
 ```{r loading data}
 data12 <-read.csv("dataset12.csv")
 data12<-na.omit(data12)
